@@ -1,0 +1,48 @@
+{
+  "name": "@adobe/reactor-uploader",
+  "version": "5.2.0",
+  "description": "Command line tool for uploading Tags extensions.",
+  "author": {
+    "name": "Adobe Systems",
+    "url": "http://adobe.com",
+    "email": "reactor@adobe.com"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Adobe-Marketing-Cloud/reactor-uploader.git"
+  },
+  "keywords": [
+    "launch",
+    "extension"
+  ],
+  "bin": {
+    "reactor-uploader": "bin/index.js"
+  },
+  "scripts": {
+    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "test:watch": "nodemon --exec jasmine JASMINE_CONFIG_PATH=jasmine.json"
+  },
+  "dependencies": {
+    "@adobe/jwt-auth": "^2.0.0",
+    "chalk": "^4.1.0",
+    "delay": "^4.4.0",
+    "form-data": "^4.0.0",
+    "inquirer": "^7.3.3",
+    "node-fetch": "^2.6.7",
+    "ora": "^5.3.0",
+    "prettyjson": "^1.2.1",
+    "request-debug": "^0.2.0",
+    "yargs": "^16.2.0",
+    "yauzl": "^2.10.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.6.4",
+    "jasmine-expect": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "proxyquire": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=14.21.2"
+  }
+}
